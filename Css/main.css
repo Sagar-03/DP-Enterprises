@@ -82,7 +82,6 @@ nav {
 .nav-link {
     margin-right: 70px; /* Adjust this value for custom spacing on the right */
     color: black;
-    /* text-decoration: underline; */
     transition: color 0.2s ease;
     font-weight: bold;
     font-size: 20px;
@@ -475,13 +474,15 @@ body {
     width: 100%; /* Add this to ensure the image covers the width */
     background-size: cover;
     background-position: center;
+    border: 1px solid #364999;
 }
 
 .bottom-left-link {
     width: 90%;
     position: absolute;
-    bottom: 10px; /* Adjust this value to your preference */
-    left: 10px; /* Adjust this value to your preference */
+    top: 50%; /* Center vertically */
+    left: 0; /* Adjust this value to your preference */
+    transform: translateY(-50%); /* Adjust for true vertical centering */
     color: black; /* Dark grey color for better contrast */
     text-decoration: none;
     background-color: transparent; /* Optional: Add a semi-transparent background */
@@ -498,9 +499,9 @@ body {
 .bottom-left-link:hover {
     transition: all 0.3s ease; /* Add this line to animate the changes */
 }
-.bottom-left-link:hover {
-    transform: scale(1); /* Add this line to make the text a little bigger on hover */
-}
+/* .bottom-left-link:hover {
+    transform: scale(0.5); /* Add this line to make the text a little bigger on hover */
+} */
 
 .bottom-left-link .fa-arrow-right {
     margin-left: 5px; /* Optional: Add space between text and icon */
